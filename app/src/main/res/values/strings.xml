@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sistema ERD</string>
+    <string name="tUsuario">Login</string>
+    <string name="tSenha">Senha</string>
+    <string name="btLogin">Login</string>
+    <string name="btCadastrar">Cadastrar novo usuário</string>
+    <string name="btInserir">Inserir</string>
+    <string name="TextoFixo">Escolha uma das opções abaixo:</string>
+    <string name="btAlterar">Alterar</string>
+    <string name="btConsultar">Consultar</string>
+    <string name="btExcluir">Excluir</string>
+    <string name="btSair">Sair</string>
+</resources>
