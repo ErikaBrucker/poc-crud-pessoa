@@ -23,46 +23,42 @@
         android:padding="20dp">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/TxEscolhaOpcoes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="@string/TextoFixo"
+            android:text="Escolha uma das opções abaixo:"
             android:textColor="@color/white"
             android:textSize="24sp"
-            android:layout_weight="1"
             android:verticalScrollbarPosition="defaultPosition"
             android:visibility="visible" />
 
         <Button
             android:id="@+id/btInserir"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
+            android:layout_height="80dp"
             android:gravity="center|center_horizontal|center_vertical"
             android:text="@string/btInserir"
             android:textSize="18sp"
-            android:layout_weight="1"
             android:visibility="visible" />
 
         <Button
             android:id="@+id/btConsultar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
+            android:gravity="center|center_horizontal|center_vertical"
             android:text="@string/btConsultar"
-            android:layout_weight="1"
             android:textSize="18sp"
             android:visibility="visible" />
 
         <Button
             android:id="@+id/btSair"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btExcluir"
-            android:layout_alignParentBottom="true"
+            android:layout_height="80dp"
+            android:gravity="center|center_horizontal|center_vertical"
             android:text="@string/btSair"
-            android:layout_weight="1"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:visibility="visible" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
