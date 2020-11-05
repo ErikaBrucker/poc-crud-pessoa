@@ -50,26 +50,3 @@ public class SegundaTela extends AppCompatActivity {
 }
 
 
-/*    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button btLogin = (Button) findViewById(R.id.btLogin);
-        btLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView tLogin = (TextView) findViewById(R.id.Login);
-                TextView tSenha = (TextView) findViewById(R.id.tSenha);
-                String login = tLogin.getText().toString();
-                String senha = tSenha.getText().toString();
-                if(login.equals("Pedro")&&senha.equals("123")){
-                    alert("Login realizado com sucesso");
-                    irParaSegundaTela();
-                }else{
-                    alert("Login ou senha invalida");
-                };
-            }
-        });
-    }*/
-
-

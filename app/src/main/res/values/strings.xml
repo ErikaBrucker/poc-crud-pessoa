@@ -53,4 +53,13 @@
         <item>SE</item>
         <item>TO</item>
     </string-array>
+    <string name="txtTelefone" />
+    <string name="txDDD" />
+    <string name="txTelefone" />
+    <string name="tipoTelefone" />
+    <string-array name="txEscolhaOpcoesTelefone">
+        <item>Residencial</item>
+        <item>Comercial</item>
+        <item>Celular</item>
+    </string-array>
 </resources>
