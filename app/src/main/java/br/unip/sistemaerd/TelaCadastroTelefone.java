@@ -35,7 +35,7 @@ public class TelaCadastroTelefone extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
 
-        EditText tTelefone = (EditText)findViewById(R.id.numeroTelefone);
+        EditText tTelefone = (EditText)findViewById(R.id.telefoneCadastrado);
         String telefone = tTelefone.getText().toString();
 
         Button botaoSalvar= (Button) findViewById(R.id.btSalvar);

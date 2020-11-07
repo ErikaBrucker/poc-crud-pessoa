@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,7 +17,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 public class TelaCadastro extends AppCompatActivity {
+
+
+
 
 
 
@@ -24,6 +30,17 @@ public class TelaCadastro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro);
+
+
+      /*  ListView lista = (ListView) findViewById (R.id.telefoneCadastrado);
+        ArrayList<String> telefoneCadastrado = preencherDados();
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, telefoneCadastrado);
+        lista.setAdapter(arrayAdapter);
+
+
+        }
+
+       */
 
 
         Spinner spinner = (Spinner) findViewById(R.id.estadosBrasileiros);
@@ -46,7 +63,19 @@ public class TelaCadastro extends AppCompatActivity {
 
     }
 
+/*
+        private ArrayList<String> preencherDados() {
+            ArrayList<String> dados = new ArrayList<String>();
+            for ( tele!= null) {
+                dados.add("TxEscolhaOpcoesTelefone");
+                dados.add("telefoneCadastrado");
 
+            }
+
+            return dados;
+
+        }
+*/
 
         private void irTelaCadastroTelefone(){
 
@@ -55,6 +84,6 @@ public class TelaCadastro extends AppCompatActivity {
             startActivity(intent);
 
         }
-
-
 }
+
+

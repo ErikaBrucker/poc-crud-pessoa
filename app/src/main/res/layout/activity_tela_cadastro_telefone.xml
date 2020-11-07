@@ -54,11 +54,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Numero Telefone"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/numeroTelefone"
+            android:id="@+id/telefoneCadastrado"
             android:layout_width="match_parent"
             android:textColorHint = "@color/black"
             android:layout_height="40dp"

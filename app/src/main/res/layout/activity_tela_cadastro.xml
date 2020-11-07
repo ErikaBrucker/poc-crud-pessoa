@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:descendantFocusability="blocksDescendants"
     android:background="@color/cardview_dark_background"
     android:padding="20dp"
     tools:context=".TelaCadastro">
@@ -21,15 +20,14 @@
             android:padding="8dp">
 
 
-
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="@string/txCadastro"
-                android:textColor="#000000"
-                android:background="@color/white"
-                android:textSize="18sp" />
+                android:textColor="@color/design_default_color_secondary"
+                android:textSize="24sp" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txNome"
@@ -49,19 +47,49 @@
                 android:layout_marginTop="10dp"
                 android:background="@color/white"
                 android:hint="CPF"
+                android:inputType="number"
                 android:text="@string/txCPF"
                 android:textColor="#000000" />
-
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txLogradouro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Logradouro"
                 android:layout_marginTop="10dp"
                 android:background="@color/white"
+                android:hint="Logradouro"
                 android:text="" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="Numero"
+                    android:inputType="number"
+                    tools:text="" />
+
+                <EditText
+                    android:id="@string/txComplemento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:hint="Complemento"
+                    android:inputType="text"
+                    tools:text="" />
+            </TableRow>
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txCEP"
@@ -70,14 +98,15 @@
                 android:layout_marginTop="10dp"
                 android:background="@color/white"
                 android:hint="CEP"
+                android:inputType="number"
                 android:text="@string/txCEP" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txBairro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:layout_marginTop="10dp"
+                android:background="@color/white"
                 android:hint="Bairro"
                 android:text="@string/txBairro" />
 
@@ -85,8 +114,8 @@
                 android:id="@+id/txCidade"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:layout_marginTop="10dp"
+                android:background="@color/white"
                 android:hint="Cidade"
                 android:text="@string/txCidade" />
 
@@ -94,9 +123,9 @@
                 android:id="@+id/txEstado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:layout_weight="1"
                 android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
                 android:text="Estado"
                 android:textColor="#000000"
                 android:textSize="18sp" />
@@ -105,8 +134,8 @@
                 android:id="@+id/estadosBrasileiros"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
                 android:layout_weight="5"
+                android:background="@color/white"
                 android:hint="Estados"
                 android:tooltipText="Estado" />
 
@@ -147,9 +176,22 @@
                 </TableRow>
             </TableLayout>
 
-            <ListView
+            <TextView
+                android:id="@+id/telCadastrados"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Telefones Cadastrados:"
+                android:textColor="@color/design_default_color_secondary"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/telefoneCadastrado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                android:textColor="#000000" />
 
 
         </LinearLayout>
