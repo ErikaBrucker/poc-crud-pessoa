@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:requiresFadingEdge="horizontal|vertical"
+    app:layout_scrollFlags="snapMargins"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/cardview_dark_background"
         android:orientation="vertical"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Escolha o tipo de telefone que deseja cadastrar:"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="24sp" />
 
         <Spinner
@@ -38,6 +40,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tipos Telefone"
+
+            android:requiresFadingEdge="horizontal|vertical"
             android:tooltipText="tipoTelefone" />
 
         <TextView
@@ -56,9 +60,10 @@
         <EditText
             android:id="@+id/numeroTelefone"
             android:layout_width="match_parent"
+            android:textColorHint = "@color/black"
             android:layout_height="40dp"
-            android:background="@color/white"
-            android:inputType="phone" />
+            android:inputType="phone"
+            android:shadowColor="#302B2B" />
 
         <TextView
             android:layout_width="wrap_content"

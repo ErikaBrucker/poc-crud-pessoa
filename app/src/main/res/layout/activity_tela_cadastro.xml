@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
     android:descendantFocusability="blocksDescendants"
+    android:background="@color/cardview_dark_background"
     android:padding="20dp"
     tools:context=".TelaCadastro">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,187 +21,135 @@
             android:padding="8dp">
 
 
+
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/txCadastro"
                 android:textColor="#000000"
+                android:background="@color/white"
                 android:textSize="18sp" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/txNome"
-                    android:hint="Nome Completo"
-                    android:inputType="textPersonName"
-                    android:text="@string/txNome"
-                    tools:text="@string/txNome" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="CPF"
-                    android:id="@+id/txCPF"
-                    android:text="@string/txCPF" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:id="@+id/textView7"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="Nome Completo"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                tools:text="@string/txNome" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txCPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="CPF"
+                android:text="@string/txCPF"
+                android:textColor="#000000" />
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txLogradouro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Logradouro"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:text="" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txCEP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="CEP"
+                android:text="@string/txCEP" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txBairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:hint="Bairro"
+                android:text="@string/txBairro" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txCidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:hint="Cidade"
+                android:text="@string/txCidade" />
+
+            <TextView
+                android:id="@+id/txEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="Estado"
                 android:textColor="#000000"
                 android:textSize="18sp" />
 
-            <com.google.android.material.textfield.TextInputLayout
+            <Spinner
+                android:id="@+id/estadosBrasileiros"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_weight="5"
+                android:hint="Estados"
+                android:tooltipText="Estado" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Logradouro"
-                    android:text=""
-                    android:id="@+id/txLogradouro" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:hint="Número"
-                        android:id="@+id/txNumero"
-                        android:text="" />
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:hint="Complemento"
-                        android:id="@+id/txComplemento"
-                        android:text="" />
-
-                </TableRow>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="CEP"
-                    android:id="@+id/txCEP"
-                    android:text="@string/txCEP" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Bairro"
-                        android:id="@+id/txBairro"
-                        android:text="@string/txBairro" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Cidade"
-                    android:id="@+id/txCidade"
-                    android:text="@string/txCidade" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-                <TableLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-
-                    <TableRow
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                </TableLayout>
-
-                <TextView
-                    android:id="@+id/txEstado"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Estado"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-
-                    <Spinner
-                        android:id="@+id/estadosBrasileiros"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="5"
-                        android:hint="Estados"
-                        android:tooltipText="Estado" />
-
-
-            </com.google.android.material.textfield.TextInputLayout>
 
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="bottom|end">
-
-                    <TextView
-                        android:id="@+id/Telefone"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|center_horizontal|fill|fill_horizontal|center_vertical"
-                        android:layout_weight="10"
-                        android:gravity="start"
-                        android:text="Telefone"
-                        android:textColor="#ffffff"
-                        android:textSize="18sp" />
+                    android:layout_gravity="center|center_horizontal|fill|fill_horizontal|center_vertical">
 
                     <com.google.android.material.floatingactionbutton.FloatingActionButton
                         android:id="@+id/addTelefone"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="center|bottom"
-                        android:layout_margin="8dp"
-                        android:layout_weight="2"
-                        android:background="@android:drawable/ic_input_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
                         android:baselineAligned="false"
-                        android:clickable="true"
+                        android:gravity="center_horizontal|center_vertical"
                         app:srcCompat="@android:drawable/ic_input_add" />
 
+                    <TextView
+                        android:id="@+id/txtTelefone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Adicione o Telefone"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
 
                 </TableRow>
-
             </TableLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
 
         </LinearLayout>
