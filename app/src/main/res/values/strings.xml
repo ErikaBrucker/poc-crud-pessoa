@@ -57,6 +57,7 @@
     <string name="txDDD" />
     <string name="txTelefone" />
     <string name="tipoTelefone" />
+    <string name="apresentaListaCadastrados">Cadastrados:</string>
     <string-array name="txEscolhaOpcoesTelefone">
         <item>Residencial</item>
         <item>Comercial</item>

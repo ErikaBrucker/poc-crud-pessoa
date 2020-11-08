@@ -5,7 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class SegundaTela extends AppCompatActivity {
 
@@ -29,6 +34,24 @@ public class SegundaTela extends AppCompatActivity {
                 irTelaInicial();
             }
         });
+
+        ListView listaCadastrados = (ListView) findViewById(R.id.listaCadastrados);
+        List<Pessoa> pessoas = Arrays.asList(
+                new Pessoa(100, "Erika", "1234"),
+                new Pessoa(101, "Pedro", "98745"),
+                new Pessoa(100, "Erika", "1234"),
+                new Pessoa(101, "Pedro", "98745"),
+                new Pessoa(100, "Erika", "1234"),
+                new Pessoa(101, "Pedro", "98745"),
+                new Pessoa(100, "Erika", "1234"),
+                new Pessoa(101, "Pedro", "98745"),
+                new Pessoa(100, "Erika", "1234"),
+                new Pessoa(101, "Pedro", "98745"),
+                new Pessoa(100, "Erika", "1234"),
+                new Pessoa(101, "Pedro", "98745")
+        );
+        ArrayAdapter<Pessoa> adapter = new ArrayAdapter<Pessoa>(this, android.R.layout.simple_list_item_1,pessoas);
+        listaCadastrados.setAdapter(adapter);
 
 
     }
