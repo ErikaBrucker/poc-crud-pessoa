@@ -18,11 +18,10 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class TelaCadastro extends AppCompatActivity {
-
-
-
 
 
 
@@ -42,7 +41,6 @@ public class TelaCadastro extends AppCompatActivity {
 
        */
 
-
         Spinner spinner = (Spinner) findViewById(R.id.estadosBrasileiros);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -61,6 +59,34 @@ public class TelaCadastro extends AppCompatActivity {
         });
 
 
+        Button btVoltar = (Button) findViewById(R.id.btVoltar);
+        btVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irSegundaTela();
+            }
+        });
+
+        Button btSalvar = (Button) findViewById(R.id.btSalvar);
+        btSalvar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irTelaPessoasCadastradas();
+            }
+        });
+/*
+
+        ListView telefoneCadastrado = (ListView) findViewById(R.id.telefoneCadastrado);
+        List<TelaCadastroTelefone> telefoneCadastrado = Arrays.asList(
+                new TelefoneCadastrado("999999-9999")
+        );
+        ArrayAdapter<Pessoa> adapter = new ArrayAdapter<Pessoa>(this, android.R.layout.simple_list_item_1,telefoneCadastrados);
+        telefoneCadastrados.setAdapter(adapter);
+
+
+    }*/
+
+
     }
 
 /*
@@ -76,6 +102,20 @@ public class TelaCadastro extends AppCompatActivity {
 
         }
 */
+
+
+        private void irTelaPessoasCadastradas(){
+            Intent intent = new Intent(this, PessoasCadastradas.class);
+            startActivity(intent);
+
+        }
+
+
+
+        private void irSegundaTela(){
+            Intent intent = new Intent(this, SegundaTela.class);
+            startActivity(intent);
+        }
 
         private void irTelaCadastroTelefone(){
 

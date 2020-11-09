@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -35,6 +36,9 @@ public class SegundaTela extends AppCompatActivity {
             }
         });
 
+
+
+
         ListView listaCadastrados = (ListView) findViewById(R.id.listaCadastrados);
         List<Pessoa> pessoas = Arrays.asList(
                 new Pessoa(100, "Erika", "1234"),
@@ -50,11 +54,31 @@ public class SegundaTela extends AppCompatActivity {
                 new Pessoa(100, "Erika", "1234"),
                 new Pessoa(101, "Pedro", "98745")
         );
-        ArrayAdapter<Pessoa> adapter = new ArrayAdapter<Pessoa>(this, android.R.layout.simple_list_item_1,pessoas);
+       ArrayAdapter<Pessoa> adapter = new ArrayAdapter<Pessoa>(this, android.R.layout.simple_list_item_1,pessoas);
         listaCadastrados.setAdapter(adapter);
+        listaCadastrados.setOnItemClickListener(chamaCadastrados());
 
 
     }
+
+
+    public AdapterView.OnItemClickListener chamaCadastrados(){
+        return ( new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                irPessoasCadastradas();
+
+            }
+        });
+    }
+
+    private void irPessoasCadastradas(){
+
+        Intent intent = new Intent(this, PessoasCadastradas.class);
+        startActivity(intent);
+
+    }
+
 
     private void irTelaCadastro(){
 

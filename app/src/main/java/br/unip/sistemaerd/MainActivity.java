@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 TextView tSenha = (TextView) findViewById(R.id.tSenha);
                 String login = tLogin.getText().toString();
                 String senha = tSenha.getText().toString();
-                if(login.equals("a")&&senha.equals("1")){
+                if(login.equals("admin")&&senha.equals("111")){
                     alert("Login realizado com sucesso");
                     irParaSegundaTela();
                 }else{

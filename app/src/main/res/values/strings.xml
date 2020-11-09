@@ -58,6 +58,9 @@
     <string name="txTelefone" />
     <string name="tipoTelefone" />
     <string name="apresentaListaCadastrados">Cadastrados:</string>
+    <string name="btVoltar">Voltar</string>
+    <string name="btSalvar">Salvar</string>
+    <string name="tvNome" />
     <string-array name="txEscolhaOpcoesTelefone">
         <item>Residencial</item>
         <item>Comercial</item>
