@@ -38,10 +38,6 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                '}';
+        return "id: "+id +"\nNome: "+ nome + "\nCPF: "+cpf;
     }
 }

@@ -41,7 +41,7 @@ public class PessoasCadastradas extends AppCompatActivity {
         btAlterar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                irTelaCadastro();
+                irTelaAlteracao();
             }
         });
 
@@ -54,9 +54,7 @@ public class PessoasCadastradas extends AppCompatActivity {
         });
 
 
-        DadosCadastrais dadosCadastrais = new DadosCadastrais(100, "Erika", "111.111.111-11", "Rua das Flores",
-                444, "apto 101", "11.111-001", "Floresta",
-                "Jardim", "SP", "Celular", "(11)99999-9999");
+        DadosCadastrais dadosCadastrais = DadosCadastriasFactory.build();
 
 
         TextView tvId = (TextView) findViewById(R.id.tvId);
@@ -114,7 +112,7 @@ public class PessoasCadastradas extends AppCompatActivity {
     }
 
 
-    public AdapterView.OnItemClickListener chamaCadastrados(){
+   /* public AdapterView.OnItemClickListener chamaCadastrados(){
         return ( new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
@@ -124,7 +122,7 @@ public class PessoasCadastradas extends AppCompatActivity {
         });
 
 
-    }
+    }*/
 
 
 
@@ -151,6 +149,12 @@ public class PessoasCadastradas extends AppCompatActivity {
     private void irTelaCadastro(){
 
         Intent intent = new Intent(this, TelaCadastro.class);
+        startActivity(intent);
+    }
+
+    private void irTelaAlteracao(){
+
+        Intent intent = new Intent(this, AlterarDadosCadastrais.class);
         startActivity(intent);
     }
 

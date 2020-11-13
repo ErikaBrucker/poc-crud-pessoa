@@ -68,20 +68,17 @@
             android:textSize="18sp" />
 
 
-
-
-
-    <ListView
+        <ListView
             android:id="@+id/listaCadastrados"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
             android:gravity="center_vertical"
-            android:textColor="@color/black"
-            android:textSize="18sp" >
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp">
 
 
-    </ListView>
+        </ListView>
 
 
 

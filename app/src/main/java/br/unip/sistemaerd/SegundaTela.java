@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.Arrays;
 import java.util.List;
@@ -28,6 +29,14 @@ public class SegundaTela extends AppCompatActivity {
             }
         });
 
+        Button btConsultar = (Button) findViewById(R.id.btConsultar);
+        btConsultar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irTelaConsulta();
+            }
+        });
+
         Button btSair = (Button) findViewById(R.id.btSair);
         btSair.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,28 +46,25 @@ public class SegundaTela extends AppCompatActivity {
         });
 
 
-
-
-        ListView listaCadastrados = (ListView) findViewById(R.id.listaCadastrados);
+      ListView listaCadastrados = (ListView) findViewById(R.id.listaCadastrados);
         List<Pessoa> pessoas = Arrays.asList(
-                new Pessoa(100, "Erika", "1234"),
-                new Pessoa(101, "Pedro", "98745"),
-                new Pessoa(100, "Erika", "1234"),
-                new Pessoa(101, "Pedro", "98745"),
-                new Pessoa(100, "Erika", "1234"),
-                new Pessoa(101, "Pedro", "98745"),
-                new Pessoa(100, "Erika", "1234"),
-                new Pessoa(101, "Pedro", "98745"),
-                new Pessoa(100, "Erika", "1234"),
-                new Pessoa(101, "Pedro", "98745"),
-                new Pessoa(100, "Erika", "1234"),
-                new Pessoa(101, "Pedro", "98745")
+                new Pessoa(100, "Erika Albano Brucker", "111.111.111-11"),
+                new Pessoa(101, "Daniel Ramos Hanzen", "222.222.222-22"),
+                new Pessoa(102, "Rafael da Silva Fontes", "333.333.333-33")
+
         );
        ArrayAdapter<Pessoa> adapter = new ArrayAdapter<Pessoa>(this, android.R.layout.simple_list_item_1,pessoas);
         listaCadastrados.setAdapter(adapter);
         listaCadastrados.setOnItemClickListener(chamaCadastrados());
 
 
+    }
+
+
+    public void irTelaConsulta(){
+
+        Intent intent = new Intent(this, TelaConsulta.class);
+        startActivity(intent);
     }
 
 

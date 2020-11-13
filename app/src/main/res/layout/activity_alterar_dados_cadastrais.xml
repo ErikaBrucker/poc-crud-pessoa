@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
-    android:padding="20dp"
-    tools:context=".TelaCadastro">
+    tools:context=".AlterarDadosCadastrais">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -195,24 +193,24 @@
 
 
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btVoltar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/btVoltar" />
+                <Button
+                    android:id="@+id/btVoltar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/btVoltar" />
 
-        <Button
-            android:id="@+id/btSalvar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/btSalvar" />
-    </TableRow>
-</LinearLayout>
+                <Button
+                    android:id="@+id/btSalvar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/btSalvar" />
+            </TableRow>
+        </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

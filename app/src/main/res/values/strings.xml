@@ -25,33 +25,34 @@
     <string name="sistemaERD">Codificando</string>
     <string name="estadosBrasileiros" />
     <string-array name="estadosBrasilerios">
-        <item>AC</item>
-        <item>AL</item>
-        <item>AP</item>
-        <item>AM</item>
-        <item>BA</item>
-        <item>CE</item>
-        <item>DF</item>
-        <item>ES</item>
-        <item>GO</item>
-        <item>MA</item>
-        <item>MT</item>
-        <item>MS</item>
-        <item>MG</item>
-        <item>PA</item>
-        <item>PB</item>
-        <item>PR</item>
-        <item>PE</item>
-        <item>PI</item>
-        <item>RJ</item>
-        <item>RN</item>
-        <item>RS</item>
-        <item>RO</item>
-        <item>RR</item>
-        <item>SC</item>
-        <item>SP</item>
-        <item>SE</item>
-        <item>TO</item>
+        <item>Escolha um dos estados:</item>
+        <item>AC - Acre</item>
+        <item>AL - Alagoas</item>
+        <item>AP - Amapá</item>
+        <item>AM - Amazonas</item>
+        <item>BA - Bahia</item>
+        <item>CE - Ceará</item>
+        <item>DF - Distrito Federal</item>
+        <item>ES - Espírito Santo</item>
+        <item>GO - Goiás</item>
+        <item>MA - Maranhão</item>
+        <item>MT - Mato Grosso</item>
+        <item>MS - Mato Grosso do Sul</item>
+        <item>MG - Minas Gerais</item>
+        <item>PA - Pará</item>
+        <item>PB - Paraíba</item>
+        <item>PR - Paraná</item>
+        <item>PE - Pernambuco</item>
+        <item>PI - Piauí</item>
+        <item>RJ - Rio de Janeiro</item>
+        <item>RN - Rio Grande do Norte</item>
+        <item>RS - Rio Grande do Sul</item>
+        <item>RO - Rondônia</item>
+        <item>RR - Roraima</item>
+        <item>SC - Santa Catarina</item>
+        <item>SP - São Paulo</item>
+        <item>SE - Sergipe</item>
+        <item>TO - Tocantins</item>
     </string-array>
     <string name="txtTelefone" />
     <string name="txDDD" />
@@ -65,5 +66,11 @@
         <item>Residencial</item>
         <item>Comercial</item>
         <item>Celular</item>
+        <item>Fax</item>
+    </string-array>
+    <string-array name="buscaPor">
+        <item>id</item>
+        <item>Nome</item>
+        <item>CPF</item>
     </string-array>
 </resources>

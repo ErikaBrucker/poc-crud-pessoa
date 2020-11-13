@@ -48,6 +48,16 @@ public class TelaCadastroTelefone extends AppCompatActivity {
             }
 
         });
+
+
+        FloatingActionButton botaoVoltar = (FloatingActionButton) findViewById(R.id.btVoltar);
+        botaoVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                irTelaCadastro();
+            }
+        });
+
     }
     private void alert(String s){
 
@@ -61,5 +71,6 @@ public class TelaCadastroTelefone extends AppCompatActivity {
         startActivity(intent);
 
     }
+
 
 }

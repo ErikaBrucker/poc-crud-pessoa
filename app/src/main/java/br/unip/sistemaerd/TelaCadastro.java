@@ -30,17 +30,6 @@ public class TelaCadastro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro);
 
-
-      /*  ListView lista = (ListView) findViewById (R.id.telefoneCadastrado);
-        ArrayList<String> telefoneCadastrado = preencherDados();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, telefoneCadastrado);
-        lista.setAdapter(arrayAdapter);
-
-
-        }
-
-       */
-
         Spinner spinner = (Spinner) findViewById(R.id.estadosBrasileiros);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -71,59 +60,23 @@ public class TelaCadastro extends AppCompatActivity {
         btSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                irTelaPessoasCadastradas();
+                irSegundaTela();
             }
         });
-/*
-
-        ListView telefoneCadastrado = (ListView) findViewById(R.id.telefoneCadastrado);
-        List<TelaCadastroTelefone> telefoneCadastrado = Arrays.asList(
-                new TelefoneCadastrado("999999-9999")
-        );
-        ArrayAdapter<Pessoa> adapter = new ArrayAdapter<Pessoa>(this, android.R.layout.simple_list_item_1,telefoneCadastrados);
-        telefoneCadastrados.setAdapter(adapter);
-
-
-    }*/
 
 
     }
 
-/*
-        private ArrayList<String> preencherDados() {
-            ArrayList<String> dados = new ArrayList<String>();
-            for ( tele!= null) {
-                dados.add("TxEscolhaOpcoesTelefone");
-                dados.add("telefoneCadastrado");
+     private void irSegundaTela(){
+        Intent intent = new Intent(this, SegundaTela.class);
+        startActivity(intent);
+    }
 
-            }
+    private void irTelaCadastroTelefone(){
+        Intent intent = new Intent(this, TelaCadastroTelefone.class);
+        startActivity(intent);
 
-            return dados;
-
-        }
-*/
-
-
-        private void irTelaPessoasCadastradas(){
-            Intent intent = new Intent(this, PessoasCadastradas.class);
-            startActivity(intent);
-
-        }
-
-
-
-        private void irSegundaTela(){
-            Intent intent = new Intent(this, SegundaTela.class);
-            startActivity(intent);
-        }
-
-        private void irTelaCadastroTelefone(){
-
-
-            Intent intent = new Intent(this, TelaCadastroTelefone.class);
-            startActivity(intent);
-
-        }
+    }
 }
 
 
