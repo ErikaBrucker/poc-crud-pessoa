@@ -12,7 +12,7 @@
         <activity android:name=".PessoasCadastradas" />
         <activity android:name=".TelaCadastroTelefone" />
         <activity android:name=".TelaCadastro" />
-        <activity android:name=".SegundaTela" />
+        <activity android:name=".FuncionalidadesDoSistema" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

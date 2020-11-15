@@ -7,19 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class TelaCadastro extends AppCompatActivity {
 
@@ -68,7 +58,7 @@ public class TelaCadastro extends AppCompatActivity {
     }
 
      private void irSegundaTela(){
-        Intent intent = new Intent(this, SegundaTela.class);
+        Intent intent = new Intent(this, FuncionalidadesDoSistema.class);
         startActivity(intent);
     }
 

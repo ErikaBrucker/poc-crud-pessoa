@@ -9,17 +9,16 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class SegundaTela extends AppCompatActivity {
+public class FuncionalidadesDoSistema extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_segunda_tela1);
+        setContentView(R.layout.activity_funcionalidades_do_sistema);
 
         Button btInserir = (Button) findViewById(R.id.btInserir);
         btInserir.setOnClickListener(new View.OnClickListener() {
